@@ -1,1 +1,306 @@
 
+<html>
+<!-- standard FreeCodeCamp testing script -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- end FCC script -->
+  
+  <style>
+    p {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      max-width: 50%;
+    }
+    form {
+      padding: 50px;
+      background-color: lightblue;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      max-width: 50%;
+    }
+    input {
+      
+    }
+   #title {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+    #description {
+      
+    }
+    #survey-form {
+      
+    }
+    #name {
+      
+    }
+    #email {
+      
+    }
+    #number {
+      
+    }
+    #name-label {
+      
+    }
+    #email-label {
+      
+    }
+    #number-label{
+      
+    }
+    #dropdown {
+      
+    }
+    #submit {
+      
+    }
+    #race {
+      max-width: 50%;
+      text-align: left;
+      margin-right: auto;
+      margin-left: auto;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: repeat(3, 25px 30%);
+    }
+    #source {
+      max-width: 50%;
+      text-align: left;
+      margin-right: auto;
+      margin-left: auto;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(2, 25px 40%);
+    }
+  </style>
+  <head>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+       Tell us about your D&D character
+      </h1>
+    </header>
+    <main>
+      <p id="description">
+        We're collecting information about what sorts of D&D characters people prefer playing. Enter your information here to contribute to our data.
+      </p>
+      <form id="survey-form">
+        <div>
+          <label id="email-label" for="email">
+          Email <input id="email" name="email" type="email" placeholder="please enter your email" required>
+          </label>
+        <br><br>
+          <label id="name-label" for="name">
+            Name 
+            <input id="name" type="text" placeholder="please enter your name" required>
+          </label>
+          <br><br>
+          <label id="number-label" for="number">
+            What level is your character? 
+            <br>
+            <input id="number" type="number" min="0" max="20" placeholder="character level">
+          </label>
+          <br><br>
+          <label id="class" for="dropdown">
+            What is your character's class? 
+            <br>
+            <select id="dropdown" type="select">
+              <option>Barbarian
+              </option>
+              <option>Bard
+              </option>
+              <option>Cleric
+              </option>
+              <option>Druid
+              </option>
+              <option>Fighter
+              </option>
+              <option>Monk
+              </option>
+              <option>Paladin
+              </option>
+              <option>Ranger
+              </option>
+              <option>Rogue
+              </option>
+              <option>Sorcerer
+              </option>
+              <option>Warlock
+              </option>
+              <option>Wizard
+              </option>
+            </select>
+          </label>
+         <br><br>
+        </div>
+       <div>
+         What race is your character? <br>
+       <div id="race">
+         <div>
+          <label for="dragonborn">
+            <input id="dragonborn" name="race" type="radio" value="dragonborn">
+         </label>
+        </div>
+         <div>
+          Dragonborn
+         </div>
+         <div>
+            <label for="dwarf">
+              <input id="dwarf" name="race" type="radio" value="dwarf">
+            </label>
+         </div>
+         <div>
+           Dwarf
+         </div>
+         <div>
+            <label for="elf">
+              <input id="elf" name="race" type="radio" value="elf">
+            </label>
+         </div>
+         <div>
+           Elf
+         </div>
+         <div>
+          <label for="gnome">
+           <input id="gnome" name="race" type="radio" value="gnome">
+         </label>
+         </div>
+         <div>
+           Gnome
+         </div>
+         <div>
+          <label for="half-elf">
+           <input id="half-elf" name="race" type="radio" value="half-elf">
+         </label>
+         </div>
+         <div>
+           Half-Elf
+         </div>
+         <div>
+          <label for="halfling">
+           <input id="halfling" name="race" type="radio" value="halfling">
+         </label>
+         </div>
+         <div>
+           Halfling
+         </div>
+         <div>
+          <label for="half-orc">
+           <input id="half-orc" name="race" type="radio" value="half-orc">
+         </label>
+         </div>
+         <div>
+           Half-Orc
+         </div>
+         <div>
+          <label for="human">
+           <input id="human" name="race" type="radio" value="human">
+         </label>
+         </div>
+         <div>
+           Human
+         </div>
+         <div>
+          <label for="tiefling">
+           <input id="tiefling" name="race" type="radio" value="tiefling">
+         </label>
+         </div>
+         <div>
+           Tiefling
+         </div>
+       </div>
+       </div><br>
+       <div>
+         What source books did you use to create your character? <br>
+        </div>
+       <div id="source">
+         <div>
+           <label for="phb">
+              <input id="phb" name="source-book" type="checkbox" value="phb">
+          </label>
+         </div>
+         <div>
+           Player's Handbook
+         </div>
+         <div>
+           <label for="dmg">
+              <input id="dmg" name="source-book" type="checkbox" value="dmg">
+          </label>
+         </div>
+         <div>
+           Dungeon Master's Guide
+         </div>
+         <div>
+           <label for="xanthar">
+              <input id="xanthar" name="source-book" type="checkbox" value="xanthar">
+          </label>
+         </div>
+         <div>
+           Xanthar's Guide to Everything
+         </div>
+         <div>
+           <label for=volo>
+              <input id="volo" name="source-book" type="checkbox" value="volo">
+          </label>
+         </div>
+         <div>
+           Volo's Guide to Monsters
+         </div>
+         <div>
+           <label for="elemental">
+              <input id="elemental" name="source-book" type="checkbox" value="elemental">
+          </label>
+         </div>
+         <div>
+           Temple of Elemental Evil
+         </div>
+         <div>
+           <label for="mtg">
+              <input id="mtg" name="source-book" type="checkbox" value="ravnica">
+          </label>
+         </div>
+         <div>
+           Guild Master's Guide to Ravnica
+         </div>
+         <div>
+           <label for="UA">
+              <input id="UA" name="source-book" type="checkbox" value="UA">
+          </label>
+         </div>
+         <div>
+           Unearthed Arcana
+         </div>
+         <div>
+           <label for="3rd">
+              <input id="3rd" name="source-book" type="checkbox" value="3rd">
+          </label>
+         </div>
+         <div>
+           3rd Party Sources
+         </div>
+        </div>
+        <br>
+       <div>
+         <label for="additional">
+           Let us know anything additnional about your character here <br>
+           <textarea>
+           </textarea>
+         </label>
+       </div>
+        <br>
+       <div>
+         <button id="submit" type="submit">Submit</button>
+       </div>
+      </form>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
